@@ -2,31 +2,32 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Users, Award, Zap } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
+import treeFelling12 from '../images/tree felling 12.jpeg';
 
 const Home = () => {
   const services = [
     {
       title: 'Tree Felling Services',
       description: 'Safe and efficient tree removal with professional equipment and trained experts.',
-      icon: '🌳',
+      icon: '',
       link: '/tree-felling'
     },
     {
       title: 'Landscaping Services',
       description: 'Transform your outdoor spaces with beautiful landscaping and design solutions.',
-      icon: '🌿',
+      icon: '',
       link: '/landscaping'
     },
     {
       title: 'Emergency Services',
       description: '24/7 emergency response for urgent tree and landscape emergencies.',
-      icon: '🚨',
+      icon: '',
       link: '#contact'
     },
     {
       title: 'Maintenance Plans',
       description: 'Regular maintenance packages to keep your property looking pristine year-round.',
-      icon: '📋',
+      icon: '',
       link: '#contact'
     }
   ];
@@ -55,7 +56,7 @@ const Home = () => {
       <section
         className="hero"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(15, 15, 19, 0.9) 0%, rgba(24, 24, 27, 0.85) 100%), url('https://images.unsplash.com/photo-1581092365005-ec70bfe4a7fd?w=1200&h=600&fit=crop')`
+          backgroundImage: `linear-gradient(135deg, rgba(15, 15, 19, 0.9) 0%, rgba(24, 24, 27, 0.85) 100%), url(${treeFelling12})`
         }}
       >
         <div className="hero-content">
@@ -64,7 +65,7 @@ const Home = () => {
             <span className="text-accent">Landscaping Services</span>
           </h1>
           <p className="animate-fade-in-up">
-            Transform your outdoor spaces with expert care and precision. Serving Nairobi with excellence.
+            Transform your outdoor spaces with expert care and precision. Serving Capetown with excellence.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/tree-felling" className="btn btn-primary">
@@ -78,7 +79,15 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="section-padding section-dark-bg">
+      <section 
+        className="section-padding section-dark-bg"
+        style={{
+          backgroundImage: `linear-gradient(135deg, rgba(15, 15, 19, 0.95) 0%, rgba(24, 24, 27, 0.9) 100%), url('https://images.unsplash.com/photo-1578574494267-08af42f54802?w=1200&h=600&fit=crop')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         <div className="container">
           <div className="text-center" style={{ marginBottom: '4rem' }}>
             <p style={{ fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#f97316', marginBottom: '1rem' }}>

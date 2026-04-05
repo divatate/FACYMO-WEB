@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
 import { ArrowRight, Upload, Trash2, Trees } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
+import treeFelling1 from '../images/Tree felling 1.jpeg';
+import treeFelling4 from '../images/tree felling 4.jpeg';
+import treeFelling5 from '../images/tree felling 5.jpeg';
+import treeFelling6 from '../images/tree felling 6.jpeg';
+import treeFelling14 from '../images/tree felling 14.jpeg';
 
 const TreeFelling = () => {
-  const [gallery, setGallery] = useState([]);
+  const defaultImages = [
+    { id: 1, src: treeFelling1, name: 'Tree felling 1' },
+    { id: 2, src: treeFelling4, name: 'Tree felling 4' },
+    { id: 3, src: treeFelling5, name: 'Tree felling 5' },
+    { id: 4, src: treeFelling6, name: 'Tree felling 6' },
+    { id: 5, src: treeFelling14, name: 'Tree felling 14' }
+  ];
+  const [gallery, setGallery] = useState(defaultImages);
 
   const services = [
     'Large Tree Removal',
@@ -118,10 +130,6 @@ const TreeFelling = () => {
                 </div>
               ))}
             </div>
-
-            <button className="btn btn-primary" style={{ marginTop: '2rem' }}>
-              Schedule Consultation <ArrowRight size={20} />
-            </button>
           </div>
         </div>
       </section>
@@ -133,7 +141,7 @@ const TreeFelling = () => {
             <p style={{ fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#f97316', marginBottom: '1rem' }}>
               Portfolio
             </p>
-            <h2>Project Gallery</h2>
+            <h2>Our Previous Projects</h2>
             <div className="accent-line" style={{ margin: '1rem auto' }}></div>
           </div>
 

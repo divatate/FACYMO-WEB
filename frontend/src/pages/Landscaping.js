@@ -1,15 +1,30 @@
 import React, { useState } from 'react';
 import { ArrowRight, Upload, Trash2 } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
+import landscaping2 from '../images/landscapping 2.jpeg';
+import landscaping3 from '../images/landscapping 3.jpeg';
+import landscaping4 from '../images/landscapping 4.jpeg';
+import landscaping9 from '../images/landscapping 9.jpeg';
+import landscaping11 from '../images/landscapping 11.jpeg';
+import landscaping14 from '../images/landscapping 14.jpeg';
 
 const Landscaping = () => {
-  const [gallery, setGallery] = useState([]);
+  const defaultImages = [
+    { id: 1, src: landscaping2, name: 'Landscaping 2' },
+    { id: 2, src: landscaping3, name: 'Landscaping 3' },
+    { id: 3, src: landscaping4, name: 'Landscaping 4' },
+    { id: 4, src: landscaping9, name: 'Landscaping 9' },
+    { id: 5, src: landscaping11, name: 'Landscaping 11' },
+    { id: 6, src: landscaping14, name: 'Landscaping 14' }
+  ];
+  const [gallery, setGallery] = useState(defaultImages);
 
   const services = [
     'Garden Design & Installation',
     'Lawn Maintenance & Care',
     'Hardscaping (Pathways, Patios)',
-    'Irrigation System Installation'
+    'Ready Mix Concrete',
+    'Concrete Paving'
   ];
 
   const handleImageUpload = (e) => {
@@ -85,7 +100,7 @@ const Landscaping = () => {
             <p style={{ fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#f97316', marginBottom: '1rem' }}>
               Portfolio
             </p>
-            <h2>Before & After Gallery</h2>
+            <h2>Our Previous Projects</h2>
             <div className="accent-line" style={{ margin: '1rem auto' }}></div>
           </div>
 
