@@ -82,7 +82,7 @@ const Home = () => {
       <section 
         className="section-padding section-dark-bg"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(15, 15, 19, 0.95) 0%, rgba(24, 24, 27, 0.9) 100%), url('https://images.unsplash.com/photo-1578574494267-08af42f54802?w=1200&h=600&fit=crop')`,
+          backgroundImage: `linear-gradient(135deg, rgba(17, 15, 19, 0.95) 0%, rgba(24, 24, 27, 0.9) 100%), url('https://images.unsplash.com/photo-1578574494267-08af42f54802?w=1200&h=600&fit=crop')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -128,7 +128,7 @@ const Home = () => {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {features.map((feature, index) => (
-                <div key={index} style={{ display: 'flex', gap: '1.5rem' }} className="animate-slide-in-left" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div key={index} style={{ display: 'flex', gap: '1.5rem', animationDelay: `${index * 0.1}s` }} className="animate-slide-in-left">
                   <div style={{ color: '#f97316', flexShrink: 0 }}>{feature.icon}</div>
                   <div>
                     <h3 style={{ marginBottom: '0.5rem', color: '#fafafa' }}>{feature.title}</h3>

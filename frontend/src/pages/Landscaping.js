@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Upload, Trash2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 import landscaping2 from '../images/landscapping 2.jpeg';
 import landscaping3 from '../images/landscapping 3.jpeg';
@@ -27,7 +27,7 @@ const Landscaping = () => {
     'Concrete Paving'
   ];
 
-  const handleImageUpload = (e) => {
+  /*const handleImageUpload = (e) => {
     const files = Array.from(e.target.files);
     files.forEach(file => {
       const reader = new FileReader();
@@ -40,11 +40,7 @@ const Landscaping = () => {
       };
       reader.readAsDataURL(file);
     });
-  };
-
-  const deleteImage = (id) => {
-    setGallery(gallery.filter(img => img.id !== id));
-  };
+  }*/
 
   return (
     <div className="App">
@@ -105,7 +101,7 @@ const Landscaping = () => {
           </div>
 
           {/* Upload Section */}
-          <div className="card" style={{ marginBottom: '3rem', textAlign: 'center' }}>
+          {/*<div className="card" style={{ marginBottom: '3rem', textAlign: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '1rem' }}>
               <Upload size={24} className="text-accent" />
               <h4 style={{ margin: 0 }}>Upload Project Photos</h4>
@@ -123,8 +119,7 @@ const Landscaping = () => {
                 color: '#fafafa',
                 cursor: 'pointer'
               }}
-            />
-          </div>
+            />*/}
 
           {/* Gallery Grid */}
           {gallery.length > 0 ? (
@@ -132,23 +127,6 @@ const Landscaping = () => {
               {gallery.map(image => (
                 <div key={image.id} style={{ position: 'relative' }} className="gallery-item">
                   <img src={image.src} alt={image.name} />
-                  <button
-                    onClick={() => deleteImage(image.id)}
-                    style={{
-                      position: 'absolute',
-                      top: '10px',
-                      right: '10px',
-                      backgroundColor: '#dc2626',
-                      color: '#fff',
-                      border: 'none',
-                      padding: '0.75rem',
-                      borderRadius: '0',
-                      cursor: 'pointer'
-                    }}
-                    className="btn"
-                  >
-                    <Trash2 size={20} />
-                  </button>
                 </div>
               ))}
             </div>

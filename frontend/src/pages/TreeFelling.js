@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { ArrowRight, Upload, Trash2, Trees } from 'lucide-react';
+import { ArrowRight, Trees } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 import treeFelling1 from '../images/Tree felling 1.jpeg';
 import treeFelling4 from '../images/tree felling 4.jpeg';
 import treeFelling5 from '../images/tree felling 5.jpeg';
 import treeFelling6 from '../images/tree felling 6.jpeg';
+import treeFelling12 from '../images/tree felling 12.jpeg';
 import treeFelling14 from '../images/tree felling 14.jpeg';
 
 const TreeFelling = () => {
@@ -13,7 +14,8 @@ const TreeFelling = () => {
     { id: 2, src: treeFelling4, name: 'Tree felling 4' },
     { id: 3, src: treeFelling5, name: 'Tree felling 5' },
     { id: 4, src: treeFelling6, name: 'Tree felling 6' },
-    { id: 5, src: treeFelling14, name: 'Tree felling 14' }
+    { id: 5, src: treeFelling12, name: 'Tree felling 12' },
+    { id: 6, src: treeFelling14, name: 'Tree felling 14' }
   ];
   const [gallery, setGallery] = useState(defaultImages);
 
@@ -31,7 +33,7 @@ const TreeFelling = () => {
     'Root Removal & Treatment'
   ];
 
-  const handleImageUpload = (e) => {
+  {/*const handleImageUpload = (e) => {
     const files = Array.from(e.target.files);
     files.forEach(file => {
       const reader = new FileReader();
@@ -44,11 +46,7 @@ const TreeFelling = () => {
       };
       reader.readAsDataURL(file);
     });
-  };
-
-  const deleteImage = (id) => {
-    setGallery(gallery.filter(img => img.id !== id));
-  };
+  };*/}
 
   return (
     <div className="App">
@@ -124,7 +122,7 @@ const TreeFelling = () => {
                 'Emergency response available 24/7',
                 'Safe removal of hazardous trees'
               ].map((feature, index) => (
-                <div key={index} style={{ display: 'flex', gap: '1rem' }} className="animate-slide-in-left" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div key={index} style={{ display: 'flex', gap: '1rem', animationDelay: `${index * 0.1}s` }} className="animate-slide-in-left">
                   <div style={{ color: '#f97316', flexShrink: 0, fontSize: '1.5rem' }}>✓</div>
                   <p className="text-light" style={{ margin: 0 }}>{feature}</p>
                 </div>
@@ -146,7 +144,7 @@ const TreeFelling = () => {
           </div>
 
           {/* Upload Section */}
-          <div className="card" style={{ marginBottom: '3rem', textAlign: 'center' }}>
+          {/*<div className="card" style={{ marginBottom: '3rem', textAlign: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '1rem' }}>
               <Upload size={24} className="text-accent" />
               <h4 style={{ margin: 0 }}>Upload Project Photos</h4>
@@ -165,7 +163,7 @@ const TreeFelling = () => {
                 cursor: 'pointer'
               }}
             />
-          </div>
+          </div>*/}
 
           {/* Gallery Grid */}
           {gallery.length > 0 ? (
@@ -173,23 +171,6 @@ const TreeFelling = () => {
               {gallery.map(image => (
                 <div key={image.id} style={{ position: 'relative' }} className="gallery-item">
                   <img src={image.src} alt={image.name} />
-                  <button
-                    onClick={() => deleteImage(image.id)}
-                    style={{
-                      position: 'absolute',
-                      top: '10px',
-                      right: '10px',
-                      backgroundColor: '#dc2626',
-                      color: '#fff',
-                      border: 'none',
-                      padding: '0.75rem',
-                      borderRadius: '0',
-                      cursor: 'pointer'
-                    }}
-                    className="btn"
-                  >
-                    <Trash2 size={20} />
-                  </button>
                 </div>
               ))}
             </div>
