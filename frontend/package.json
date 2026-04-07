@@ -13,6 +13,10 @@
     "react-scripts": "5.0.1",
     "react-router-dom": "^6.0.0",
     "sonner": "^1.0.0",
+    "lucide-react": "^0.383.0",
+    "axios": "^1.0.0",
+    "framer-motion": "^11.0.0",
+    "@headlessui/react": "^2.0.0",
     "serve": "^14.0.0"
   }
 }
