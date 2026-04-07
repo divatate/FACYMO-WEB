@@ -2,7 +2,8 @@
   "name": "frontend",
   "version": "1.0.0",
   "scripts": {
-    "start": "serve . -l $PORT"
+    "build": "vite build",
+    "start": "npx serve dist -l $PORT"
   },
   "dependencies": {
     "serve": "^14.0.0"
