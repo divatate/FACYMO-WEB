@@ -8,6 +8,7 @@ from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict, EmailStr
 from typing import List, Optional
 import uuid
+import uvicorn
 from datetime import datetime, timezone
 import base64
 
@@ -22,6 +23,15 @@ db = client[os.environ['DB_NAME']]
 
 # Create the main app without a prefix
 app = FastAPI()
+
+# Add CORS middleware BEFORE including router
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
@@ -179,14 +189,6 @@ async def create_testimonial(input: TestimonialCreate):
 
 # Include the router in the main app
 app.include_router(api_router)
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=False,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # Configure logging
 logging.basicConfig(
