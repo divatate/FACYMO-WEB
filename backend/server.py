@@ -180,13 +180,21 @@ async def create_testimonial(input: TestimonialCreate):
 # Include the router in the main app
 app.include_router(api_router)
 
-allowed_origins = [origin.strip() for origin in os.environ.get('CORS_ORIGINS', '*').split(',') if origin.strip()]
-allow_credentials = False if allowed_origins == ['*'] else True
+#allowed_origins = [origin.strip() for origin in os.environ.get('CORS_ORIGINS', '*').split(',') if origin.strip()]
+#allow_credentials = False if allowed_origins == ['*'] else True
 
-app.add_middleware(
+#app.add_middleware(
     CORSMiddleware,
     allow_credentials=allow_credentials,
     allow_origins=allowed_origins,
+    allow_methods=["*"],
+    allow_headers=["*"],
+#)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -237,7 +245,7 @@ async def seed_data():
         await db.testimonials.insert_many(sample_testimonials)
         logger.info("Seeded sample testimonials")
 
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.environ.get("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    
+ if __name__ == "__main__":
+    import os
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
