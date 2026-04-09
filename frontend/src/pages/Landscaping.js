@@ -161,9 +161,6 @@ const Landscaping = () => {
                       </div>
                     ))}
                   </div>
-                  <p style={{ textAlign: 'center', color: '#f97316', fontWeight: '700', marginTop: '1rem' }}>
-                    Before and After
-                  </p>
                 </div>
               ))}
             </div>
