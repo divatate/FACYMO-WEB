@@ -3,27 +3,39 @@ import { ArrowRight } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 import landscaping2 from '../images/landscapping 2.jpeg';
 import landscaping3 from '../images/landscapping 3.jpeg';
+import landscaping4 from '../images/landscapping 4.jpeg';
 import landscaping11 from '../images/landscapping 11.jpeg';
 import landscaping12 from '../images/landscapping 12.jpeg';
 import landscaping14 from '../images/landscapping 14.jpeg';
+import landscaping18 from '../images/landscapping  18.jpeg';
 import landscaping19 from '../images/landscappingg 19.jpeg';
 import landscaping21 from '../images/landscapping 21.jpeg';
-import landscaping22 from '../images/landscapping 22.jpeg';
 import landscaping24 from '../images/landscapping 24.jpeg';
 import landscaping26 from '../images/landscapping 26.jpeg';
 
 const Landscaping = () => {
   const defaultImages = [
-    { id: 1, src: landscaping2, name: 'Landscaping 2' },
-    { id: 2, src: landscaping3, name: 'Landscaping 3' },
-    { id: 3, src: landscaping11, name: 'Landscaping 11' },
-    { id: 4, src: landscaping12, name: 'Landscaping 12' },
-    { id: 5, src: landscaping14, name: 'Landscaping 14' },
-    { id: 6, src: landscaping19, name: 'Landscaping 19' },
-    { id: 7, src: landscaping21, name: 'Landscaping 21' },
-    { id: 8, src: landscaping22, name: 'Landscaping 22' },
-    { id: 9, src: landscaping24, name: 'Landscaping 24' },
-    { id: 10, src: landscaping26, name: 'Landscaping 26' }
+    [
+      { id: '2-14-1', src: landscaping2, name: 'Landscaping 2' },
+      { id: '2-14-2', src: landscaping14, name: 'Landscaping 14' }
+    ],
+    [
+      { id: '21-26-1', src: landscaping21, name: 'Landscaping 21' },
+      { id: '21-26-2', src: landscaping26, name: 'Landscaping 26' }
+    ],
+    [
+      { id: '19-18-1', src: landscaping19, name: 'Landscaping 19' },
+      { id: '19-18-2', src: landscaping18, name: 'Landscaping 18' }
+    ],
+    [
+      { id: '3-4-1', src: landscaping3, name: 'Landscaping 3' },
+      { id: '3-4-2', src: landscaping4, name: 'Landscaping 4' },
+      { id: '3-11-3', src: landscaping11, name: 'Landscaping 11' }
+    ],
+    [
+      { id: '12-24-1', src: landscaping12, name: 'Landscaping 12' },
+      { id: '12-24-2', src: landscaping24, name: 'Landscaping 24' }
+    ]
   ];
   const [gallery, setGallery] = useState(defaultImages);
 
@@ -132,9 +144,26 @@ const Landscaping = () => {
           {/* Gallery Grid */}
           {gallery.length > 0 ? (
             <div className="gallery">
-              {gallery.map(image => (
-                <div key={image.id} style={{ position: 'relative' }} className="gallery-item">
-                  <img src={image.src} alt={image.name} />
+              {gallery.map((group, groupIndex) => (
+                <div key={groupIndex} style={{ marginBottom: '2rem' }}>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
+                    {group.map((image) => (
+                      <div
+                        key={image.id}
+                        className="gallery-item"
+                        style={{
+                          flex: group.length === 3 ? '1 1 calc(33.33% - 0.67rem)' : '1 1 calc(50% - 0.5rem)',
+                          minWidth: '220px',
+                          position: 'relative'
+                        }}
+                      >
+                        <img src={image.src} alt={image.name} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                      </div>
+                    ))}
+                  </div>
+                  <p style={{ textAlign: 'center', color: '#f97316', fontWeight: '700', marginTop: '1rem' }}>
+                    Before and After
+                  </p>
                 </div>
               ))}
             </div>
