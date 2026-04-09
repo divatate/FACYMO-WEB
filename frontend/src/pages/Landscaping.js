@@ -110,65 +110,346 @@ const Landscaping = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="section-padding section-gradient-bg" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=1200&h=600&fit=crop')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      <section
+        className="section-padding section-gradient-bg"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=1200&h=600&fit=crop')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         <div className="container">
           <div className="text-center" style={{ marginBottom: '3rem' }}>
-            <p style={{ fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#f97316', marginBottom: '1rem' }}>
+            <p
+              style={{
+                fontSize: '0.875rem',
+                fontWeight: '600',
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+                color: '#f97316',
+                marginBottom: '1rem'
+              }}
+            >
               Portfolio
             </p>
             <h2>Our Previous Projects</h2>
             <div className="accent-line" style={{ margin: '1rem auto' }}></div>
           </div>
 
-          {/* Upload Section */}
-          {/*<div className="card" style={{ marginBottom: '3rem', textAlign: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '1rem' }}>
-              <Upload size={24} className="text-accent" />
-              <h4 style={{ margin: 0 }}>Upload Project Photos</h4>
-            </div>
-            <input
-              type="file"
-              multiple
-              accept="image/*"
-              onChange={handleImageUpload}
-              style={{
-                padding: '1rem',
-                border: '2px dashed #f97316',
-                borderRadius: '0',
-                backgroundColor: '#18181b',
-                color: '#fafafa',
-                cursor: 'pointer'
-              }}
-            />*/}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
 
-          {/* Gallery Grid */}
-          {gallery.length > 0 ? (
-            <div className="gallery">
-              {gallery.map((group, groupIndex) => (
-                <div key={groupIndex} style={{ marginBottom: '2rem' }}>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
-                    {group.map((image) => (
-                      <div
-                        key={image.id}
-                        className="gallery-item"
-                        style={{
-                          flex: group.length === 3 ? '1 1 calc(33.33% - 0.67rem)' : '1 1 calc(50% - 0.5rem)',
-                          minWidth: '220px',
-                          position: 'relative'
-                        }}
-                      >
-                        <img src={image.src} alt={image.name} style={{ width: '100%', height: 'auto', display: 'block' }} />
-                      </div>
-                    ))}
-                  </div>
+            {/* Pair 1: landscaping 18 & 19 */}
+            <div>
+              <p
+                style={{
+                  textAlign: 'center',
+                  color: '#f97316',
+                  fontWeight: '600',
+                  fontSize: '0.9rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '0.5rem'
+                }}
+              >
+                Garden Transformation
+              </p>
+              <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+                A stunning before-and-after showcasing our full garden overhaul — lush planting meets clean structure.
+              </p>
+              <div
+                style={{
+                  backgroundColor: '#1a2e1a',
+                  borderRadius: '12px',
+                  padding: '1.5rem',
+                  display: 'flex',
+                  gap: '1rem',
+                  flexWrap: 'wrap'
+                }}
+              >
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping18}
+                    alt="Landscaping 18"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
                 </div>
-              ))}
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping19}
+                    alt="Landscaping 19"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+              </div>
+              <p style={{ textAlign: 'center', color: '#a1a1aa', fontSize: '0.85rem', fontStyle: 'italic', marginTop: '0.75rem' }}>
+                A complete garden redesign — from bare soil to a thriving green retreat.
+              </p>
             </div>
-          ) : (
-            <div className="text-center" style={{ padding: '3rem', color: '#a1a1aa' }}>
-              <p>No images uploaded yet. Showcase your landscaping transformations.</p>
+
+            {/* Pair 2: landscaping 24 & 12 */}
+            <div>
+              <p
+                style={{
+                  textAlign: 'center',
+                  color: '#f97316',
+                  fontWeight: '600',
+                  fontSize: '0.9rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '0.5rem'
+                }}
+              >
+                🪨 Hardscaping & Paving
+              </p>
+              <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+                Precision paving and concrete work that adds lasting elegance and durability to any outdoor space.
+              </p>
+              <div
+                style={{
+                  backgroundColor: '#1e1e2e',
+                  borderRadius: '12px',
+                  padding: '1.5rem',
+                  display: 'flex',
+                  gap: '1rem',
+                  flexWrap: 'wrap'
+                }}
+              >
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping24}
+                    alt="Landscaping 24"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping12}
+                    alt="Landscaping 12"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+              </div>
+              <p style={{ textAlign: 'center', color: '#a1a1aa', fontSize: '0.85rem', fontStyle: 'italic', marginTop: '0.75rem' }}>
+                Clean lines, solid foundations — our hardscaping work speaks for itself.
+              </p>
             </div>
-          )}
+
+            {/* Pair 3: landscaping 14 & 26 */}
+            <div>
+              <p
+                style={{
+                  textAlign: 'center',
+                  color: '#f97316',
+                  fontWeight: '600',
+                  fontSize: '0.9rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '0.5rem'
+                }}
+              >
+                Lawn & Pathway Design
+              </p>
+              <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+                Beautiful pathways and manicured lawns that guide the eye and invite you outdoors.
+              </p>
+              <div
+                style={{
+                  backgroundColor: '#1a2810',
+                  borderRadius: '12px',
+                  padding: '1.5rem',
+                  display: 'flex',
+                  gap: '1rem',
+                  flexWrap: 'wrap'
+                }}
+              >
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping14}
+                    alt="Landscaping 14"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping26}
+                    alt="Landscaping 26"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+              </div>
+              <p style={{ textAlign: 'center', color: '#a1a1aa', fontSize: '0.85rem', fontStyle: 'italic', marginTop: '0.75rem' }}>
+                Every path tells a story — designed to flow naturally through your landscape.
+              </p>
+            </div>
+
+            {/* Pair 4: landscaping 2 & 4 */}
+            <div>
+              <p
+                style={{
+                  textAlign: 'center',
+                  color: '#f97316',
+                  fontWeight: '600',
+                  fontSize: '0.9rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '0.5rem'
+                }}
+              >
+                Residential Landscaping
+              </p>
+              <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+                Transforming private residences with thoughtful planting schemes and outdoor living features.
+              </p>
+              <div
+                style={{
+                  backgroundColor: '#2a1e10',
+                  borderRadius: '12px',
+                  padding: '1.5rem',
+                  display: 'flex',
+                  gap: '1rem',
+                  flexWrap: 'wrap'
+                }}
+              >
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping2}
+                    alt="Landscaping 2"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping4}
+                    alt="Landscaping 4"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+              </div>
+              <p style={{ textAlign: 'center', color: '#a1a1aa', fontSize: '0.85rem', fontStyle: 'italic', marginTop: '0.75rem' }}>
+                Your home deserves an exterior as beautiful as its interior.
+              </p>
+            </div>
+
+            {/* Pair 5: landscaping 21 & 11 */}
+            <div>
+              <p
+                style={{
+                  textAlign: 'center',
+                  color: '#f97316',
+                  fontWeight: '600',
+                  fontSize: '0.9rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '0.5rem'
+                }}
+              >
+                Feature Gardens
+              </p>
+              <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+                Statement garden features that create a wow factor and become the heart of your outdoor space.
+              </p>
+              <div
+                style={{
+                  backgroundColor: '#1c1c2a',
+                  borderRadius: '12px',
+                  padding: '1.5rem',
+                  display: 'flex',
+                  gap: '1rem',
+                  flexWrap: 'wrap'
+                }}
+              >
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping21}
+                    alt="Landscaping 21"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+                <div
+                  style={{
+                    flex: '1 1 calc(50% - 0.5rem)',
+                    minWidth: '220px',
+                    borderRadius: '8px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <img
+                    src={landscaping11}
+                    alt="Landscaping 11"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+              </div>
+              <p style={{ textAlign: 'center', color: '#a1a1aa', fontSize: '0.85rem', fontStyle: 'italic', marginTop: '0.75rem' }}>
+                Bold designs that leave a lasting impression on every visitor.
+              </p>
+            </div>
+
+          </div>
         </div>
       </section>
 
