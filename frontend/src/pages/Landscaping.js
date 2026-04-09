@@ -3,19 +3,27 @@ import { ArrowRight } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 import landscaping2 from '../images/landscapping 2.jpeg';
 import landscaping3 from '../images/landscapping 3.jpeg';
-import landscaping4 from '../images/landscapping 4.jpeg';
-import landscaping9 from '../images/landscapping 9.jpeg';
 import landscaping11 from '../images/landscapping 11.jpeg';
+import landscaping12 from '../images/landscapping 12.jpeg';
 import landscaping14 from '../images/landscapping 14.jpeg';
+import landscaping19 from '../images/landscappingg 19.jpeg';
+import landscaping21 from '../images/landscapping 21.jpeg';
+import landscaping22 from '../images/landscapping 22.jpeg';
+import landscaping24 from '../images/landscapping 24.jpeg';
+import landscaping26 from '../images/landscapping 26.jpeg';
 
 const Landscaping = () => {
   const defaultImages = [
     { id: 1, src: landscaping2, name: 'Landscaping 2' },
     { id: 2, src: landscaping3, name: 'Landscaping 3' },
-    { id: 3, src: landscaping4, name: 'Landscaping 4' },
-    { id: 4, src: landscaping9, name: 'Landscaping 9' },
-    { id: 5, src: landscaping11, name: 'Landscaping 11' },
-    { id: 6, src: landscaping14, name: 'Landscaping 14' }
+    { id: 3, src: landscaping11, name: 'Landscaping 11' },
+    { id: 4, src: landscaping12, name: 'Landscaping 12' },
+    { id: 5, src: landscaping14, name: 'Landscaping 14' },
+    { id: 6, src: landscaping19, name: 'Landscaping 19' },
+    { id: 7, src: landscaping21, name: 'Landscaping 21' },
+    { id: 8, src: landscaping22, name: 'Landscaping 22' },
+    { id: 9, src: landscaping24, name: 'Landscaping 24' },
+    { id: 10, src: landscaping26, name: 'Landscaping 26' }
   ];
   const [gallery, setGallery] = useState(defaultImages);
 

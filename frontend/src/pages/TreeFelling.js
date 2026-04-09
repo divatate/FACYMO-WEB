@@ -5,6 +5,8 @@ import treeFelling1 from '../images/Tree felling 1.jpeg';
 import treeFelling4 from '../images/tree felling 4.jpeg';
 import treeFelling5 from '../images/tree felling 5.jpeg';
 import treeFelling6 from '../images/tree felling 6.jpeg';
+import treeFelling8 from '../images/tree felling 8.jpeg';
+import treeFelling9 from '../images/tree felling 9.jpeg';
 import treeFelling12 from '../images/tree felling 12.jpeg';
 import treeFelling14 from '../images/tree felling 14.jpeg';
 
@@ -14,8 +16,10 @@ const TreeFelling = () => {
     { id: 2, src: treeFelling4, name: 'Tree felling 4' },
     { id: 3, src: treeFelling5, name: 'Tree felling 5' },
     { id: 4, src: treeFelling6, name: 'Tree felling 6' },
-    { id: 5, src: treeFelling12, name: 'Tree felling 12' },
-    { id: 6, src: treeFelling14, name: 'Tree felling 14' }
+    { id: 5, src: treeFelling8, name: 'Tree felling 8' },
+    { id: 6, src: treeFelling9, name: 'Tree felling 9' },
+    { id: 7, src: treeFelling12, name: 'Tree felling 12' },
+    { id: 8, src: treeFelling14, name: 'Tree felling 14' }
   ];
   const [gallery, setGallery] = useState(defaultImages);
 
