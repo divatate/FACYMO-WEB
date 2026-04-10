@@ -147,42 +147,170 @@ const TreeFelling = () => {
             <div className="accent-line" style={{ margin: '1rem auto' }}></div>
           </div>
 
-          {/* Upload Section */}
-          {/*<div className="card" style={{ marginBottom: '3rem', textAlign: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '1rem' }}>
-              <Upload size={24} className="text-accent" />
-              <h4 style={{ margin: 0 }}>Upload Project Photos</h4>
-            </div>
-            <input
-              type="file"
-              multiple
-              accept="image/*"
-              onChange={handleImageUpload}
-              style={{
-                padding: '1rem',
-                border: '2px dashed #f97316',
-                borderRadius: '0',
-                backgroundColor: '#18181b',
-                color: '#fafafa',
-                cursor: 'pointer'
-              }}
-            />
-          </div>*/}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
 
-          {/* Gallery Grid */}
-          {gallery.length > 0 ? (
-            <div className="gallery">
-              {gallery.map(image => (
-                <div key={image.id} style={{ position: 'relative' }} className="gallery-item">
-                  <img src={image.src} alt={image.name} />
-                </div>
-              ))}
+          {/* Tree Felling 4 - Unwanted Tree */}
+          <div>
+            <p style={{ textAlign: 'center', color: '#f97316', fontWeight: '600', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+               Unwanted Tree Removal
+            </p>
+            <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+              Removing trees that are out of place, overgrown, or no longer wanted on the property.
+            </p>
+            <div style={{ backgroundColor: '#1a2e1a', borderRadius: '12px', padding: '1.5rem' }}>
+              <img src={treeFelling4} alt="Unwanted Tree Removal" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
             </div>
-          ) : (
-            <div className="text-center" style={{ padding: '3rem', color: '#a1a1aa' }}>
-              <p>No images uploaded yet. Showcase your tree removal projects.</p>
+            <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+              <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+                <p style={{ color: '#4ade80', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>✅ Advantages</p>
+                <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Frees up space, improves curb appeal, eliminates root damage risks to paving or foundations.</p>
+              </div>
+              <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#2e1a1a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+                <p style={{ color: '#f87171', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>⚠️ Disadvantages</p>
+                <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Loss of shade and natural habitat. Stump may remain if not treated separately.</p>
+              </div>
             </div>
-          )}
+          </div>
+
+          {/* Tree Felling 1 - Old Tree */}
+          <div>
+            <p style={{ textAlign: 'center', color: '#f97316', fontWeight: '600', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+               Old Tree Removal
+            </p>
+            <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+              Aging trees become structurally weak and pose serious safety risks — timely removal is essential.
+            </p>
+            <div style={{ backgroundColor: '#2a1e10', borderRadius: '12px', padding: '1.5rem' }}>
+              <img src={treeFelling1} alt="Old Tree Removal" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
+            </div>
+            <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+              <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+                <p style={{ color: '#4ade80', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>✅ Advantages</p>
+                <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Eliminates hazard of falling branches, prevents pest infestation, opens space for new growth.</p>
+              </div>
+              <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#2e1a1a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+                <p style={{ color: '#f87171', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>⚠️ Disadvantages</p>
+                <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Old trees often have deep root systems making removal complex and time-consuming.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Tree Felling 6 - Old Tree */}
+          <div>
+        <p style={{ textAlign: 'center', color: '#f97316', fontWeight: '600', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+           Aged Tree Clearance
+        </p>
+        <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+          Old trees left unattended can become dangerous to people and property nearby.
+        </p>
+        <div style={{ backgroundColor: '#1c1a10', borderRadius: '12px', padding: '1.5rem' }}>
+          <img src={treeFelling6} alt="Aged Tree Clearance" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
+        </div>
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#4ade80', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>✅ Advantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Safer environment, reduced liability risk, allows better light penetration to surrounding plants.</p>
+          </div>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#2e1a1a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#f87171', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>⚠️ Disadvantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Removal of established trees can disturb surrounding soil and nearby plant roots.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Tree Felling 8 - Unwanted Tree */}
+      <div>
+        <p style={{ textAlign: 'center', color: '#f97316', fontWeight: '600', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+           Unwanted Tree Clearance
+        </p>
+        <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+          Trees growing in the wrong place can cause major structural damage — we remove them safely and cleanly.
+        </p>
+        <div style={{ backgroundColor: '#1a2e1a', borderRadius: '12px', padding: '1.5rem' }}>
+          <img src={treeFelling8} alt="Unwanted Tree Clearance" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
+        </div>
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#4ade80', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>✅ Advantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Protects walls, pipes, and driveways from root intrusion. Reclaims usable outdoor space.</p>
+          </div>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#2e1a1a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#f87171', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>⚠️ Disadvantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Can reduce privacy screening and windbreak protection the tree may have been providing.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Tree Felling 9 - Bush Clearance */}
+      <div>
+        <p style={{ textAlign: 'center', color: '#f97316', fontWeight: '600', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+           Bush Clearance
+        </p>
+        <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+          Overgrown bush and shrub clearance to reclaim your land and restore order to your property.
+        </p>
+        <div style={{ backgroundColor: '#0f2212', borderRadius: '12px', padding: '1.5rem' }}>
+          <img src={treeFelling9} alt="Bush Clearance" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
+        </div>
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#4ade80', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>✅ Advantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Reduces fire hazard, deters pests and rodents, opens up the property for development or landscaping.</p>
+          </div>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#2e1a1a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#f87171', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>⚠️ Disadvantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Dense bush clearance can disturb wildlife habitats and expose bare soil to erosion.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Tree Felling 14 - Palm Removal */}
+      <div>
+        <p style={{ textAlign: 'center', color: '#f97316', fontWeight: '600', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+           Palm Tree Removal
+        </p>
+        <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+          Palms require specialist removal techniques — our team handles them safely from top to base.
+        </p>
+        <div style={{ backgroundColor: '#1e2a10', borderRadius: '12px', padding: '1.5rem' }}>
+          <img src={treeFelling14} alt="Palm Tree Removal" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
+        </div>
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#4ade80', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>✅ Advantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Eliminates falling frond hazards, prevents root damage to nearby structures, improves sightlines.</p>
+          </div>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#2e1a1a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#f87171', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>⚠️ Disadvantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Palms are tall and heavy, making removal complex — requires skilled climbers and proper equipment.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Tree Felling 12 - Stump Removal */}
+      <div>
+        <p style={{ textAlign: 'center', color: '#f97316', fontWeight: '600', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+           Stump Removal
+        </p>
+        <p style={{ textAlign: 'center', color: '#fafafa', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
+          Left-behind stumps are unsightly and dangerous — we grind and remove them completely.
+        </p>
+        <div style={{ backgroundColor: '#1c1410', borderRadius: '12px', padding: '1.5rem' }}>
+          <img src={treeFelling12} alt="Stump Removal" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
+        </div>
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#4ade80', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>✅ Advantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Removes tripping hazards, prevents regrowth and pests, leaves the ground ready for replanting or paving.</p>
+          </div>
+          <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#2e1a1a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
+            <p style={{ color: '#f87171', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', margin: '0 0 0.4rem 0' }}>⚠️ Disadvantages</p>
+            <p style={{ color: '#a1a1aa', fontSize: '0.85rem', margin: 0 }}>Grinding leaves wood chip debris behind, and deep roots may still require chemical treatment.</p>
+          </div>
+        </div>
+          </div>
+
+          </div>
         </div>
       </section>
 
