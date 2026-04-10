@@ -158,7 +158,7 @@ const TreeFelling = () => {
               Removing trees that are out of place, overgrown, or no longer wanted on the property.
             </p>
             <div style={{ backgroundColor: '#1a2e1a', borderRadius: '12px', padding: '1.5rem' }}>
-              <img src={treeFelling4} alt="Unwanted Tree Removal" style={{ width: '100%', maxHeight: '350px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+              <img src={treeFelling4} alt="Unwanted Tree Removal" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
             </div>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
               <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
@@ -181,7 +181,7 @@ const TreeFelling = () => {
               Aging trees become structurally weak and pose serious safety risks — timely removal is essential.
             </p>
             <div style={{ backgroundColor: '#2a1e10', borderRadius: '12px', padding: '1.5rem' }}>
-              <img src={treeFelling1} alt="Old Tree Removal" style={{ width: '100%', maxHeight: '350px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+              <img src={treeFelling1} alt="Old Tree Removal" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
             </div>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
               <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
@@ -204,7 +204,7 @@ const TreeFelling = () => {
           Old trees left unattended can become dangerous to people and property nearby.
         </p>
         <div style={{ backgroundColor: '#1c1a10', borderRadius: '12px', padding: '1.5rem' }}>
-          <img src={treeFelling6} alt="Aged Tree Clearance" style={{ width: '100%', maxHeight: '350px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src={treeFelling6} alt="Aged Tree Clearance" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
         </div>
         <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
           <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
@@ -227,7 +227,7 @@ const TreeFelling = () => {
           Trees growing in the wrong place can cause major structural damage — we remove them safely and cleanly.
         </p>
         <div style={{ backgroundColor: '#1a2e1a', borderRadius: '12px', padding: '1.5rem' }}>
-          <img src={treeFelling8} alt="Unwanted Tree Clearance" style={{ width: '100%', maxHeight: '350px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src={treeFelling8} alt="Unwanted Tree Clearance" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
         </div>
         <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
           <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
@@ -250,7 +250,7 @@ const TreeFelling = () => {
           Overgrown bush and shrub clearance to reclaim your land and restore order to your property.
         </p>
         <div style={{ backgroundColor: '#0f2212', borderRadius: '12px', padding: '1.5rem' }}>
-          <img src={treeFelling9} alt="Bush Clearance" style={{ width: '100%', maxHeight: '350px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src={treeFelling9} alt="Bush Clearance" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
         </div>
         <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
           <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
@@ -273,7 +273,7 @@ const TreeFelling = () => {
           Palms require specialist removal techniques — our team handles them safely from top to base.
         </p>
         <div style={{ backgroundColor: '#1e2a10', borderRadius: '12px', padding: '1.5rem' }}>
-          <img src={treeFelling14} alt="Palm Tree Removal" style={{ width: '100%', maxHeight: '350px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src={treeFelling14} alt="Palm Tree Removal" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
         </div>
         <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
           <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
@@ -296,7 +296,7 @@ const TreeFelling = () => {
           Left-behind stumps are unsightly and dangerous — we grind and remove them completely.
         </p>
         <div style={{ backgroundColor: '#1c1410', borderRadius: '12px', padding: '1.5rem' }}>
-          <img src={treeFelling12} alt="Stump Removal" style={{ width: '100%', maxHeight: '350px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src={treeFelling12} alt="Stump Removal" style={{ width: '100%', borderRadius: '8px', display: 'block' }} />
         </div>
         <div style={{ display: 'flex', gap: '1rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
           <div style={{ flex: '1 1 calc(50% - 0.5rem)', backgroundColor: '#14260a', borderRadius: '8px', padding: '0.75rem 1rem' }}>
