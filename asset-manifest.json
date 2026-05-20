@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.17a1aa34.css",
+    "main.js": "/static/js/main.abd56456.js",
+    "static/media/landscapping 12.jpeg": "/static/media/landscapping 12.127895d6a34ed11f1374.jpeg",
+    "static/media/Tree felling 1.jpeg": "/static/media/Tree felling 1.685ba0b1f62ea1edb944.jpeg",
+    "static/media/landscapping 14.jpeg": "/static/media/landscapping 14.7b5498a0211b704fe481.jpeg",
+    "static/media/tree felling 5.jpeg": "/static/media/tree felling 5.d9b50021b0527d2985a9.jpeg",
+    "static/media/landscapping 2.jpeg": "/static/media/landscapping 2.045ac569fd7312eb77e6.jpeg",
+    "static/media/tree felling 8.jpeg": "/static/media/tree felling 8.6ee6ad582688b6265048.jpeg",
+    "static/media/tree felling 4.jpeg": "/static/media/tree felling 4.1215b9922b98e69284ed.jpeg",
+    "static/media/tree felling 12.jpeg": "/static/media/tree felling 12.11539cbeba6d93e7c273.jpeg",
+    "static/media/landscapping 3.jpeg": "/static/media/landscapping 3.76501d556541c108f651.jpeg",
+    "static/media/landscapping 11.jpeg": "/static/media/landscapping 11.007eeae0d60497ade78b.jpeg",
+    "static/media/tree felling 6.jpeg": "/static/media/tree felling 6.20b5e39a540188028951.jpeg",
+    "static/media/landscapping  18.jpeg": "/static/media/landscapping  18.098c770f1666c7cf95ea.jpeg",
+    "static/media/landscapping 26.jpeg": "/static/media/landscapping 26.8b463a7d3d765916ff83.jpeg",
+    "static/media/landscapping 21.jpeg": "/static/media/landscapping 21.4266bf6fc289cd8ba373.jpeg",
+    "static/media/tree felling 9.jpeg": "/static/media/tree felling 9.357b89c1a351129ca978.jpeg",
+    "static/media/landscapping 24.jpeg": "/static/media/landscapping 24.1e41cdf05a0dd05c69f4.jpeg",
+    "static/media/tree felling 14.jpeg": "/static/media/tree felling 14.f2530d0241471b2289c8.jpeg",
+    "static/media/landscappingg 19.jpeg": "/static/media/landscappingg 19.1855b1ada4b405bc632c.jpeg",
+    "static/media/landscapping 4.jpeg": "/static/media/landscapping 4.09320b2c8ebc7dcd239b.jpeg",
+    "index.html": "/index.html",
+    "main.17a1aa34.css.map": "/static/css/main.17a1aa34.css.map",
+    "main.abd56456.js.map": "/static/js/main.abd56456.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17a1aa34.css",
+    "static/js/main.abd56456.js"
+  ]
+}
